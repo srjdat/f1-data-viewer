@@ -34,50 +34,38 @@ body{
     transition: all .4s ease-in-out;
 }
 
-//controls 
-.controls{
-    .container{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: var(--color-black);
-        li{
-            display: inline-block;
-            
-            a{
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 17px 25px;
-                text-decoration: none;
-                font-size: 1.75rem;
 
-                &:hover{
-                    transition: $use-transition;
-                    border-radius: 50%;
-                    background-color: var(--color-secondary);
-                }
+.container{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-black);
+    li{
+        display: inline-block;
+        a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 17px 25px;
+            text-decoration: none;
+            font-size: 1.75rem;
+
+            &:hover{
+                transition: $use-transition;
+                background-color: var(--color-secondary);
             }
         }
     }
 }
 
-.main-content{
-    .header-content{
-        h1{
-            font-size: 90px;
-        }
-        .main-header{
-            padding-top: 1rem;
-            font-size: 7rem; 
-        }
-        .line-1{
-            height: .5px;
-            background: var(--color-grey1);
-            max-width: 60%;
-            margin-left: 20%;
-        }
+.main-title{
+    h1{
+        font-size: 6rem;
+    }
+    .line-1{
+        background-color: var(--color-grey1);
+        width: 50%;
+        margin-left: 25%;
     }
 }
-
