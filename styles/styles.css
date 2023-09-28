@@ -60,4 +60,9 @@ body {
   background-color: var(--color-grey1);
   width: 50%;
   margin-left: 25%;
+}
+
+.about-text {
+  color: var(--color-secondary);
+  padding-top: 10px;
 }/*# sourceMappingURL=styles.css.map */
