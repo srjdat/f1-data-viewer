@@ -78,7 +78,8 @@ select {
   border: none;
   margin-top: 30px;
   border-radius: 10%;
+  font-size: large;
 }
-size select:focus {
+select:focus {
   outline: none;
 }/*# sourceMappingURL=styles.css.map */
