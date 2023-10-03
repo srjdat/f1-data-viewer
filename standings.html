@@ -31,9 +31,20 @@
       </div>
     </div>
     
+    <style type="text/css">
+        select{
+            width: 80px;
+            height: 25px;
+        }
+        select:focus{
+            min-width: 80px;
+            width: auto;
+        }
+    </style>
+
     <label for="year">Select a Year</label>
-    <select name="year" id="year">
-        <option value="2022">2022</option>
+    <select id="year-option">
+        <option value="2022" selected="selected">2022</option>
         <option value="2021">2021</option>
         <option value="2020">2020</option>
         <option value="2019">2019</option>
