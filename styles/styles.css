@@ -85,6 +85,21 @@ body {
   width: 30%;
 }
 
+.line-1-standings {
+  margin-left: 35%;
+  width: 30%;
+}
+
+.line-1-calendar {
+  width: 30%;
+  margin-left: 35%;
+}
+
+.line-1-facts {
+  width: 30%;
+  margin-left: 35%;
+}
+
 .about-text {
   color: var(--color-secondary);
   font-size: 1.5rem;
