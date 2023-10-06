@@ -6,6 +6,6 @@ yearSelect.addEventListener(`change`, (e) => {
     const value = select.value;
     const desc = select.selectedOptions[0].text;
 
-    log(`option desc`, desc);
-})
+   alert(desc); 
+});
 
