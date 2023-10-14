@@ -17,12 +17,29 @@ yearSelect.addEventListener(`change`, (e) => {
     //const response = getYearWinner(desc);
     //const winner = response["winner"];
 
+    const data = null;
+
+    const xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+
+    xhr.addEventListener('readystatechange', function () {
+        if (this.readyState === this.DONE) {
+            console.log(this.responseText);
+        }
+    });
+
+    xhr.open('GET', 'https://f1-live-motorsport-data.p.rapidapi.com/session/2757');
+    xhr.setRequestHeader('X-RapidAPI-Key', 'SIGN-UP-FOR-KEY');
+    xhr.setRequestHeader('X-RapidAPI-Host', 'f1-live-motorsport-data.p.rapidapi.com');
+
+    xhr.send(data);
     
 
     if(document.getElementById("yearSelect").innerHTML !== "") {
         document.getElementById("yearSelect").innerHTML = `<div id="${desc}">Winner: ${desc}</div>`;
     }
 
+    
 });
 
 
