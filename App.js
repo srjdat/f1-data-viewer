@@ -15,12 +15,9 @@ yearSelect.addEventListener(`change`, (e) => {
     //const response = getYearWinner(desc);
     //const winner = response["winner"];
 
-    fetch('http://ergast.com/api/f1/2008/driverStandings', {
-        mode: 'no-cors',         
-    })
+    fetch('http://ergast.com/api/f1/2008/driverStandings')
     .then(res => res.json())
     .then(data => console.log(data))
-    .catch(error => console.log(error))
 });
 
 
