@@ -8,16 +8,28 @@ yearSelect.addEventListener(`change`, (e) => {
     //const winners = getWinners();
     //const winnerArr = winners["winners"];
 
-    //winnerArr.for_each((e) => {
-    //    document.getElementById("year").innerHTML += `<option value="${e}">${e}</option>`
-    //})
+    
+    //document.getElementById("year").innerHTML += `<option value="${e}">${e}</option>`
 
     //const response = getYearWinner(desc);
-    //const winner = response["winner"];
+    //const winner = response["winner"]; 
+    //givenName, familyName
 
-    fetch('http://ergast.com/api/f1/2008/driverStandings')
-    .then(res => res.json())
-    .then(data => console.log(data))
+    var url = 'http://ergast.com/api/f1/' + desc + '/driverStandings.json';
+    
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("yearSelect").innerHTML = '';
+            const obj = JSON.parse(data); 
+            
+            //for loop to present all the drivers 
+            for (let index = 0; index < obj.MRData.StandingsTable.StandingsLists[0].DriverStandings.length; index++) {
+                const driver = obj.MRData.StandingsTable.StandingsLists[0].DriverStandings[index].Driver;
+                document.getElementById("yearSelect").innerHTML += `<div> ${(index+1) + ": " + driver.givenName + " " + driver.familyName}</div>`;
+            }
+        })
+    
 });
 
 
