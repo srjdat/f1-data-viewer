@@ -24,6 +24,9 @@ yearSelect.addEventListener(`change`, (e) => {
     } else {
         url += '/constructorStandings.json';
     }
+
+    document.getElementById("loading").innerHTML += `${"loading"}`; 
+    //alert(url);
     
     fetch(url)
         .then(response => response.text())
@@ -50,6 +53,7 @@ yearSelect.addEventListener(`change`, (e) => {
                 }
             }
             console.log(obj);
+            document.getElementById("loading").innerHTML = ''; 
         })
 });
 
