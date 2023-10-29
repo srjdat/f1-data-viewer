@@ -131,9 +131,16 @@ select:focus {
 .year-select .load-anim {
   font-size: 2vw;
 }
+.year-select .standings {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 23px;
+}
+.year-select .standings .title {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
 .year-select .my-chart {
   align-self: center;
-  color: var(--color-secondary);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }/*# sourceMappingURL=styles.css.map */

@@ -139,16 +139,20 @@ select{
         //display: inherit;
         font-size: 2vw;
     }
-    
+
     .standings{
-        //display: inherit;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 23px;
+        .title{
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
     }
 
     .my-chart{
         align-self: center;
-        color: var(--color-secondary);
-        padding-top: 2rem;
-        padding-bottom: 2rem;
     }
 
 }
