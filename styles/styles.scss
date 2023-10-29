@@ -132,9 +132,24 @@ select{
 
 .year-select{
     padding-top: 1%;
+    display: flex; 
+    flex-direction: column;
 
     .load-anim{
+        //display: inherit;
         font-size: 2vw;
     }
+    
+    .standings{
+        //display: inherit;
+    }
+
+    .my-chart{
+        align-self: center;
+        color: var(--color-secondary);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
 }
 

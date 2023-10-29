@@ -125,7 +125,15 @@ select:focus {
 
 .year-select {
   padding-top: 1%;
+  display: flex;
+  flex-direction: column;
 }
 .year-select .load-anim {
   font-size: 2vw;
+}
+.year-select .my-chart {
+  align-self: center;
+  color: var(--color-secondary);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }/*# sourceMappingURL=styles.css.map */
