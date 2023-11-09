@@ -133,16 +133,28 @@ select{
 .year-select{
     padding-top: 1%;
     display: flex; 
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .load-anim{
-        //display: inherit;
-        font-size: 2vw;
+        
+        border: 16px solid var(--color-grey3); 
+        border-top: 16px solid var(--color-secondary); 
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
 
     .standings{
         padding-top: 1rem;
         padding-bottom: 1rem;
+        margin-left: auto;
         font-size: 23px;
         .title{
             font-size: 30px;
@@ -153,6 +165,7 @@ select{
 
     .my-chart{
         align-self: center;
+        margin-left: auto;
     }
 
 }

@@ -6,7 +6,6 @@ var yValues = [];
 var desc = ''; 
 var temp = ''; 
 
-
 //type of information selector
 type.addEventListener(`change`, (e) => {
     temp = ''; 
@@ -42,8 +41,8 @@ function standings() {
         url += '/constructorStandings.json';
     }
 
-    //get a simple loading animation going on
-    document.getElementById("year-select").innerHTML = `<div class="load-anim">${"loading..."}</div>`; 
+    //start the loading animation
+    document.getElementById("year-select").innerHTML = `<div class="load-anim"></div>`; 
     //alert(url); //to see if the code even works
     
     //api call
@@ -108,11 +107,12 @@ function standings() {
                     response: true,
                     plugins: {
                         title: {
-                            display: true, 
-                            text: "Points",
+                            //display: true, 
+                            //text: "Points",
                             //color: "#27A260",
                             padding: {
-                                top: 50
+                                top: 10,
+                                left: 30
                             },
                             font: {
                                 size: 50
