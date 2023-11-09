@@ -24,7 +24,10 @@ type.addEventListener(`change`, (e) => {
 yearSelect.addEventListener(`change`, (e) => {
     const select = e.target; 
     desc = String(select.selectedOptions[0].text);
-    standings(); 
+
+    if(temp != ''){
+        standings(); 
+    }
 });
 
 
