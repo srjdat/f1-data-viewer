@@ -159,4 +159,14 @@ select:focus {
 .year-select .my-chart {
   align-self: center;
   margin-left: auto;
+}
+
+.upcoming-races {
+  padding-top: 10px;
+}
+.upcoming-races .year-diff {
+  padding: 10px;
+  color: var(--color-secondary);
+  font-size: 40px;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */

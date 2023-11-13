@@ -137,7 +137,6 @@ select{
     align-items: center;
 
     .load-anim{
-        
         border: 16px solid var(--color-grey3); 
         border-top: 16px solid var(--color-secondary); 
         border-radius: 50%;
@@ -171,6 +170,11 @@ select{
 
 .upcoming-races{
     padding-top: 10px;
-    
+    .year-diff{
+        padding: 10px;
+        color: var(--color-secondary);
+        font-size: 40px;
+        font-weight: bold;
+    }
 }
 
