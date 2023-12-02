@@ -31,6 +31,7 @@ body{
     font-size: 1.1rem;
     color: var(--color-white); 
     transition: all .4s ease-in-out;
+    text-decoration: none !important;
 }
 
 
@@ -155,11 +156,16 @@ select{
         padding-bottom: 1rem;
         margin-left: auto;
         font-size: 25px;
-        .title{
-            font-size: 40px;
-            font-weight: bold;
-            text-decoration: underline;
+        a{
+            text-decoration: none !important;
         }
+        .title{
+            font-size: 50px;
+            font-weight: bold;
+            color: var(--color-secondary);
+            //text-decoration: underline;
+        }
+        
     }
 
     .my-chart{
@@ -175,6 +181,9 @@ select{
         color: var(--color-secondary);
         font-size: 40px;
         font-weight: bold;
+    }
+    a{
+        text-decoration: inherit;
     }
 }
 

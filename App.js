@@ -3,8 +3,8 @@ const yearSelect = document.querySelector(`[id="year"]`);
 const type = document.querySelector(`[id="type"]`);
 var xValues = [];
 var yValues = [];
-var desc = ''; 
-var temp = ''; 
+var desc = ''; //year
+var temp = ''; //driver or constructor
 
 //type of information selector
 type.addEventListener(`change`, (e) => {
@@ -59,7 +59,7 @@ function standings() {
             document.getElementById("year-select").innerHTML = `<div class="standings" id="standings"></div>`; 
             if (temp == 'Drivers') {
                 //title for the standings 
-                document.getElementById("standings").innerHTML += `<div class="title"> Driver Standings for ${desc}</div>`;
+                document.getElementById("standings").innerHTML += `<a href="https://www.formula1.com/en/results.html/${desc}/drivers.html" target="_blank"><div class="title">Driver Standings for ${desc}</div></a>`;
 
                 //for loop to display all the drivers 
                 for (let index = 0; index < obj.MRData.StandingsTable.StandingsLists[0].DriverStandings.length; index++) {
@@ -74,7 +74,7 @@ function standings() {
                 }
             } else {
                 //title for the standings
-                document.getElementById("standings").innerHTML += `<div class="title"> Constructor Standings for ${desc}</div>`;
+                document.getElementById("standings").innerHTML += `<a href="https://www.formula1.com/en/results.html/${desc}/team.html" target="_blank"><div class="title">Constructor Standings for ${desc}</div></a>`;
 
                 //for loop to display all the drivers 
                 for (let index = 0; index < obj.MRData.StandingsTable.StandingsLists[0].ConstructorStandings.length; index++) {

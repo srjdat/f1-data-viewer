@@ -28,6 +28,7 @@ body {
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
+  text-decoration: none !important;
 }
 
 .container {
@@ -151,10 +152,13 @@ select:focus {
   margin-left: auto;
   font-size: 25px;
 }
+.year-select .standings a {
+  text-decoration: none !important;
+}
 .year-select .standings .title {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
-  text-decoration: underline;
+  color: var(--color-secondary);
 }
 .year-select .my-chart {
   align-self: center;
@@ -169,4 +173,7 @@ select:focus {
   color: var(--color-secondary);
   font-size: 40px;
   font-weight: bold;
+}
+.upcoming-races a {
+  text-decoration: inherit;
 }/*# sourceMappingURL=styles.css.map */
