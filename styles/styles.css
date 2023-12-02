@@ -163,10 +163,13 @@ select:focus {
 
 .upcoming-races {
   padding-top: 10px;
+<<<<<<< HEAD
 }
 .upcoming-races .year-diff {
   padding: 10px;
   color: var(--color-secondary);
   font-size: 40px;
   font-weight: bold;
+=======
+>>>>>>> 09d5b95 (styles)
 }/*# sourceMappingURL=styles.css.map */
