@@ -70,7 +70,7 @@ function standings() {
                     yValues[index] = driver.points;
 
                     //get the position then their first name, last name, the team they drive for, and the amount of points they have
-                    document.getElementById("standings").innerHTML += `<div> ${driver.position + ": " + driver.Driver.givenName + " " + driver.Driver.familyName + " - " + driver.points}</div>`;
+                    document.getElementById("standings").innerHTML += `<div> ${driver.position + ". " + driver.Driver.givenName + " " + driver.Driver.familyName + " - " + driver.points} points</div>`;
                 }
             } else {
                 //title for the standings
@@ -85,7 +85,7 @@ function standings() {
                     yValues[index] = constructor.points; 
 
                     //get the position, name of the team, and the points  
-                    document.getElementById("standings").innerHTML += `<div> ${constructor.position + ": " + constructor.Constructor.name + " - " + constructor.points}</div>`;
+                    document.getElementById("standings").innerHTML += `<div> ${constructor.position + ". " + constructor.Constructor.name + " - " + constructor.points} points</div>`;
                 }
             }
 
