@@ -112,10 +112,14 @@ body{
     margin-left: 35%;
 }
 
-.about-text{
+.about-page{
     color: var(--color-secondary);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-top: 15px;
+    a{
+        text-decoration: none !important;
+        color: var(--color-secondary);
+    }
 }
 
 /* Standings */
