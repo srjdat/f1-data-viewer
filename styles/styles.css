@@ -8,8 +8,8 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #27A260;
-  --color-white: #FFFFFF;
+  --color-secondary: #27a260;
+  --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey1: #dbe1e8;
@@ -19,7 +19,7 @@
   --color-grey5: #2a2e35;
   --color-grey6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -77,8 +77,15 @@ body {
   display: grid;
 }
 
+.home-text {
+  padding-top: 1vh;
+  font-size: xx-large;
+  color: var(--color-secondary);
+  font-weight: bolder;
+}
+
 .main-title h1 {
-  font-size: 7rem;
+  font-size: 6.5rem;
 }
 .main-title .line-1 {
   background-color: var(--color-grey1);

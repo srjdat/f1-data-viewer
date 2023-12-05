@@ -1,193 +1,199 @@
-$use-transition: all .4s ease-in-out;
+$use-transition: all 0.4s ease-in-out;
 
-*{
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
-    list-style: none;
-    text-align: center; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-align: center;
 }
 
-
-:root{
-    --color-primary: #191d2b;
-    --color-secondary: #27A260; 
-    --color-white: #FFFFFF; 
-    --color-black: #000; 
-    --color-grey0: #f8f8f8; 
-    --color-grey1: #dbe1e8; 
-    --color-grey2: #b2becd; 
-    --color-grey3: #6c7983; 
-    --color-grey4: #454e56; 
-    --color-grey5: #2a2e35; 
-    --color-grey6: #12181b; 
-    --br-sm-2: 14px; 
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
+:root {
+  --color-primary: #191d2b;
+  --color-secondary: #27a260;
+  --color-white: #ffffff;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey1: #dbe1e8;
+  --color-grey2: #b2becd;
+  --color-grey3: #6c7983;
+  --color-grey4: #454e56;
+  --color-grey5: #2a2e35;
+  --color-grey6: #12181b;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-body{
-    background-color: var(--color-primary);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
-    color: var(--color-white); 
-    transition: all .4s ease-in-out;
+body {
+  background-color: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-white);
+  transition: all 0.4s ease-in-out;
+  text-decoration: none !important;
+}
+
+.container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-black);
+  li {
+    display: inline-block;
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 7px 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+
+      &:hover {
+        transition: $use-transition;
+        background-color: var(--color-secondary);
+      }
+    }
+  }
+
+  .about-nav {
+    background-color: var(--color-secondary);
+  }
+  .calendar-nav {
+    background-color: var(--color-secondary);
+  }
+  .index-nav {
+    background-color: var(--color-secondary);
+  }
+  .facts-nav {
+    background-color: var(--color-secondary);
+  }
+  .standings-nav {
+    background-color: var(--color-secondary);
+  }
+  .races-nav {
+    background-color: var(--color-secondary);
+  }
+}
+
+.yearSelect {
+  padding-top: 1%;
+  display: grid;
+}
+
+.home-text {
+  padding-top: 1vh;
+  font-size: xx-large;
+  color: var(--color-secondary);
+  font-weight: bolder;
+}
+
+.main-title {
+  h1 {
+    font-size: 6.5rem;
+  }
+  .line-1 {
+    background-color: var(--color-grey1);
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+.line-1-about {
+  margin-left: 35%;
+  width: 30%;
+}
+.line-1-standings {
+  margin-left: 35%;
+  width: 30%;
+}
+.line-1-calendar {
+  width: 30%;
+  margin-left: 35%;
+}
+.line-1-facts {
+  width: 30%;
+  margin-left: 35%;
+}
+
+.about-page {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  padding-top: 15px;
+  a {
     text-decoration: none !important;
-}
-
-
-.container{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--color-black);
-    li{
-        display: inline-block;
-        a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 7px 10px;
-            text-decoration: none;
-            font-size: 1.5rem;
-
-            &:hover{
-                transition: $use-transition;
-                background-color: var(--color-secondary);
-            }
-        }
-    }
-
-    .about-nav{
-        background-color: var(--color-secondary);
-    }
-    .calendar-nav{
-        background-color: var(--color-secondary);
-    }
-    .index-nav{
-        background-color: var(--color-secondary);
-    }
-    .facts-nav{
-        background-color: var(--color-secondary);
-    }
-    .standings-nav{
-        background-color: var(--color-secondary);
-    }
-    .races-nav{
-        background-color: var(--color-secondary);
-    }
-}
-
-.yearSelect{
-    padding-top: 1%;
-    display: grid;
-    
-}
-
-.main-title{
-    h1{
-        font-size: 7rem;
-    }
-    .line-1{
-        background-color: var(--color-grey1);
-        width: 50%;
-        margin-left: 25%;
-    }
-}
-
-.line-1-about{
-    margin-left: 35%;
-    width: 30%;
-}
-.line-1-standings{
-    margin-left: 35%;
-    width: 30%;
-}
-.line-1-calendar{
-    width: 30%;
-    margin-left: 35%;
-}
-.line-1-facts{
-    width: 30%;
-    margin-left: 35%;
-}
-
-.about-page{
     color: var(--color-secondary);
-    font-size: 1.2rem;
-    padding-top: 15px;
-    a{
-        text-decoration: none !important;
-        color: var(--color-secondary);
-    }
+  }
 }
 
 /* Standings */
-select{
-    border: none;
-    margin-top: 30px;
-    margin-left: 5px;
-    border-radius: 5px;
-    font-size: large;
+select {
+  border: none;
+  margin-top: 30px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-size: large;
 
-    &:focus{
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }
 
-.year-select{
-    padding-top: 1%;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+.year-select {
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .load-anim{
-        border: 16px solid var(--color-grey3); 
-        border-top: 16px solid var(--color-secondary); 
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        animation: spin 2s linear infinite;
-    }
+  .load-anim {
+    border: 16px solid var(--color-grey3);
+    border-top: 16px solid var(--color-secondary);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+  }
 
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
     }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
-    .standings{
-        margin-top: 5px;
-        padding-bottom: 1rem;
-        margin-left: auto;
-        font-size: 25px;
-        a{
-            text-decoration: none !important;
-        }
-        .title{
-            font-size: 50px;
-            font-weight: bold;
-            color: var(--color-secondary);
-            //text-decoration: underline;
-        }
-        
+  .standings {
+    margin-top: 5px;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    font-size: 25px;
+    a {
+      text-decoration: none !important;
     }
+    .title {
+      font-size: 50px;
+      font-weight: bold;
+      color: var(--color-secondary);
+      //text-decoration: underline;
+    }
+  }
 
-    .my-chart{
-        align-self: center;
-        margin-left: auto;
-    }
+  .my-chart {
+    align-self: center;
+    margin-left: auto;
+  }
 }
 
-.upcoming-races{
-    padding-top: 10px;
-    .year-diff{
-        padding: 10px;
-        color: var(--color-secondary);
-        font-size: 40px;
-        font-weight: bold;
-    }
-    a{
-        text-decoration: inherit;
-    }
+.upcoming-races {
+  padding-top: 10px;
+  .year-diff {
+    padding: 10px;
+    color: var(--color-secondary);
+    font-size: 40px;
+    font-weight: bold;
+  }
+  a {
+    text-decoration: inherit;
+  }
 }
-
