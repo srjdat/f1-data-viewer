@@ -1,10 +1,11 @@
-const log = console.log;
 const yearSelect = document.querySelector(`[id="year"]`);
 const type = document.querySelector(`[id="type"]`);
 var xValues = [];
 var yValues = [];
 var desc = ''; //year
 var temp = ''; //driver or constructor
+
+console.log("fetching data");
 
 //type of information selector
 type.addEventListener(`change`, (e) => {
@@ -52,6 +53,7 @@ function standings() {
     fetch(url)
         .then(response => response.text())
         .then(data => {
+            //display data
             document.getElementById("year-select").innerHTML = '';
             const obj = JSON.parse(data); 
             
