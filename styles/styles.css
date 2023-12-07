@@ -79,9 +79,10 @@ body {
 }
 
 .home-text {
+  display: flex;
+  justify-content: center;
   padding-top: 1vh;
   font-size: xx-large;
-  color: var(--color-secondary);
   font-weight: bolder;
 }
 
@@ -182,6 +183,21 @@ select:focus {
 .year-select .my-chart {
   align-self: center;
   margin-left: auto;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+th {
+  font-size: 20px;
+  border: 1px solid white;
+}
+
+td {
+  border: 1px solid white;
 }
 
 .upcoming-races {

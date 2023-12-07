@@ -49,6 +49,8 @@ function standings() {
     document.getElementById("year-select").innerHTML = `<div class="load-anim"></div>`; 
     //alert(url); //to see if the code even works
     
+    //todo make standings into a table
+
     //api call
     fetch(url)
         .then(response => response.text())
@@ -62,6 +64,8 @@ function standings() {
             if (temp == 'Drivers') {
                 //title for the standings 
                 document.getElementById("standings").innerHTML += `<a href="https://www.formula1.com/en/results.html/${desc}/drivers.html" target="_blank"><div class="title">Driver Standings for ${desc}</div></a>`;
+                document.getElementById("standings").innerHTML += `<table id="standings-table" style="width:auto;"><tr><th>Rank</th><th>Drivers</th><th>Points</th></tr></table>`;
+
 
                 //for loop to display all the drivers 
                 for (let index = 0; index < obj.MRData.StandingsTable.StandingsLists[0].DriverStandings.length; index++) {
@@ -71,8 +75,13 @@ function standings() {
                     xValues[index] = driver.Driver.givenName + " " + driver.Driver.familyName; 
                     yValues[index] = driver.points;
 
+                    //make the table
+                    document.getElementById("standings-table").innerHTML += `<tr><td>${driver.position}</td><td>${driver.Driver.givenName + " " + driver.Driver.familyName}</td><td>${driver.points + " points"}</td></tr>`
+                    //document.getElementById("standings").innerHTML += `<table id="standings-table" style="100%"></table>`;
+
+
                     //get the position then their first name, last name, the team they drive for, and the amount of points they have
-                    document.getElementById("standings").innerHTML += `<div> ${driver.position + ". " + driver.Driver.givenName + " " + driver.Driver.familyName + " - " + driver.points} points</div>`;
+                    //document.getElementById("standings").innerHTML += `<div> ${driver.position + ". " + driver.Driver.givenName + " " + driver.Driver.familyName + " - " + driver.points} points</div>`;
                 }
             } else {
                 //title for the standings
