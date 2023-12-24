@@ -25,6 +25,10 @@ $use-transition: all 0.4s ease-in-out;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
 }
 
+span {
+  color: gold;
+}
+
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
@@ -107,6 +111,7 @@ body {
     width: 50%;
     margin-left: 25%;
   }
+
 }
 
 .line-1-about {
@@ -185,12 +190,20 @@ select {
       font-size: 50px;
       font-weight: bold;
       color: var(--color-secondary);
+      //text-align: left;
       //text-decoration: underline;
+    } 
+  }
+
+  table{
+    th{
+      font-size: 25px;
+      color: gold;
     }
   }
 
   .my-chart {
-    align-self: center;
+    align-self: right;
     margin-left: auto;
   }
 }

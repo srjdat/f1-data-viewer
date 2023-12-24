@@ -23,6 +23,10 @@
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
 }
 
+span {
+  color: gold;
+}
+
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
@@ -180,8 +184,12 @@ select:focus {
   font-weight: bold;
   color: var(--color-secondary);
 }
+.year-select table th {
+  font-size: 25px;
+  color: gold;
+}
 .year-select .my-chart {
-  align-self: center;
+  align-self: right;
   margin-left: auto;
 }
 
