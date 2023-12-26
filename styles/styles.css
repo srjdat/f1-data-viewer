@@ -180,13 +180,10 @@ select:focus {
   text-decoration: none !important;
 }
 .year-select .standings .title {
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 7vh;
+  text-decoration: underline;
+  font-weight: bolder;
   color: var(--color-secondary);
-}
-.year-select table th {
-  font-size: 25px;
-  color: gold;
 }
 .year-select .my-chart {
   align-self: right;
@@ -198,14 +195,18 @@ table {
   justify-content: center;
   border: 1px solid white;
 }
-
-th {
-  font-size: 20px;
+table th {
+  font-size: 35px;
   border: 1px solid white;
+  color: gold;
+  font-weight: 800;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-
-td {
+table td {
   border: 1px solid white;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .upcoming-races {
