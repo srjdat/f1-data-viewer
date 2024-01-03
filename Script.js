@@ -22,6 +22,18 @@ function onButtonClick() {
         "Daniel Ricciardo won the 2018 Monaco Grand Prix while being stuck in 6th gear while being pressured by 4 time world champion Sebastian Vettel",
         "Formula One drivers can learn about any miniscule problems of the car by just driving them",
         "Prost’s first time in an F1 car was a test for McLaren. During his first stint on the track he was so impressive that the team boss, Teddy Meyer, stopped watching and went to get a contract for Prost to sign.",
+        "Lewis Hamilton and Michael Schumacher are tied for the most World Driver Championships with 7 titles to their names",
+        "The United Kingdom holds the most Formula One World Driver Championships",
+        "Ferrari has 16 Constructors' titles and 15 Driver titles",
+        "Williams has 9 Constructors' titles and 7 Driver titles",
+        "McLaren has 8 Constructors' titles and 12 Driver titles",
+        "Max Verstappen had the most consequetive wins in 2023 with 10 consequetive wins",
+        "Max Verstappen had the most dominant year winning 19/22 races in 2023",
+        "Lewis Hamilton and Jacques Villeneuve have the most wins in their first championship with 4 wins",
+        "Lewis Hamilton currently holds the records of most pole positions with 104 poles",
+        "Fernando Alonso has the most race entries with 380 entries",
+        "Lewis Hamilton and Jacques Villeneuve have the record for Fewest World Championship seasons before their first title sitting at winning their first title on their second season",
+        "Sebastian Vettel is the youngest World Drivers' Championship winner"
     ];
 
     const fact = fun_facts[(Math.floor(Math.random() * fun_facts.length))]; 
