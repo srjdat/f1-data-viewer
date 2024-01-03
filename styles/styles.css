@@ -220,4 +220,29 @@ table td {
 }
 .upcoming-races a {
   text-decoration: inherit;
+}
+
+.fact-button {
+  font-size: 30px;
+  border: none;
+  margin-top: 3vh;
+  margin-bottom: 1.5vh;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 3px;
+  padding-right: 5px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.fact-button:hover {
+  background-color: var(--color-secondary);
+  color: white;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.fact {
+  color: var(--color-secondary);
+  font-size: 25px;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */
