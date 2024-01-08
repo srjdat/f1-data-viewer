@@ -171,6 +171,7 @@ select:focus {
   }
 }
 .year-select .standings {
+  font-family: "Tahoma";
   margin-top: 5px;
   padding-bottom: 1rem;
   margin-left: auto;
@@ -180,10 +181,11 @@ select:focus {
   text-decoration: none !important;
 }
 .year-select .standings .title {
-  font-size: 7vh;
+  font-size: 40px;
   text-decoration: underline;
   font-weight: bolder;
   color: var(--color-secondary);
+  padding-bottom: 10px;
 }
 .year-select .my-chart {
   align-self: right;
@@ -196,7 +198,7 @@ table {
   border: 1px solid white;
 }
 table th {
-  font-size: 35px;
+  font-size: 30px;
   border: 1px solid white;
   color: gold;
   font-weight: 800;
@@ -207,6 +209,7 @@ table td {
   border: 1px solid white;
   padding-left: 4px;
   padding-right: 4px;
+  font-size: 15px;
 }
 
 .upcoming-races {
