@@ -1,0 +1,1 @@
+document.getElementById("home-text").innerHTML += "test"; 
