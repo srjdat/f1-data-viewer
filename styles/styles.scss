@@ -188,7 +188,7 @@ select {
       text-decoration: none !important;
     }
     .title {
-      font-size: 40px;
+      font-size: 45px;
       text-decoration: underline;
       font-weight: bolder;
       color: var(--color-secondary);
@@ -218,7 +218,7 @@ select {
       border: 1px solid white;
       padding-left: 4px;
       padding-right: 4px;
-      font-size: 15px;
+      font-size: 20px;
     }
   }
   
@@ -237,8 +237,8 @@ select {
 }
 
 .fact-button{
-  width: 200px;
-  height: 80px;
+  width: 150px;
+  height: 70px;
   border: none;
   margin-top: 4.5vh;
   margin-bottom: 1.5vh;
@@ -263,7 +263,7 @@ select {
   }
 
   &::before{
-    transition: all .7s ease-in-out;
+    transition: all .5s ease-in-out;
     position: absolute;
     border-radius: 10px;
     top: 0;
