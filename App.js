@@ -62,6 +62,8 @@ function standings() {
             
             //erase the loading thing
             document.getElementById("year-select").innerHTML = `<div class="standings" id="standings"></div>`; 
+
+            //gets the data for drivers and outputs them
             if (temp == 'Drivers') {
                 //title for the standings 
                 document.getElementById("standings").innerHTML += `<a href="https://www.formula1.com/en/results.html/${desc}/drivers.html" target="_blank"><div class="title">Driver Standings for ${desc}</div></a>`;
@@ -87,6 +89,7 @@ function standings() {
                     //document.getElementById("standings").innerHTML += `<div> ${driver.position + ". " + driver.Driver.givenName + " " + driver.Driver.familyName + " - " + driver.points} points</div>`;
                 }
             } else {
+                //gets the data for constructors and outputs them
                 //title for the standings
                 document.getElementById("standings").innerHTML += `<a href="https://www.formula1.com/en/results.html/${desc}/team.html" target="_blank"><div class="title">Constructor Standings for ${desc}</div></a>`;
                 document.getElementById("standings").innerHTML += `<table id="standings-table" style="width:fit-content;margin-left:auto;margin-right:auto;"><tbody id="standings-table-body"><tr><th>Rank</th><th>Constructors</th><th>Points</th></tr><tbody></table>`;
@@ -118,6 +121,7 @@ function standings() {
             document.getElementById("year-select").innerHTML += `<canvas class="my-chart" id="myChart" style="width:50%;max-width:50vw;height:50%;max-height:100vh;"></canvas>`;
 
             //enter the colors 
+            //honestly i dont even know how this works i just know that this works
             Chart.defaults.color = "#D36E70";
             Chart.defaults.borderColor = "#000000";
             new Chart("myChart", {
