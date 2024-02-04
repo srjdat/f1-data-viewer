@@ -8,11 +8,15 @@ var url = "https://en.wikipedia.org/w/api.php?&origin=*&action=opensearch&search
 
 //asyncronous right now and things of that nature and i still have to figure out how to get the articles
 fetch(url)
-    .then(response => response.json())
+    .then(function(response){
+        console.log(response);
+        return response.json()
+    })
     .then(data => {
         console.log(data);
     }).catch(error => console.log(error));
 
+//might have to do this manually
 
 /*
 fetch("https://en.wikipedia.org/w/api.php?&origin=*&action=opensearch&search=Belgium&limit=5").then(function(resp) {
