@@ -280,9 +280,9 @@ table td {
 }
 
 .home-text {
-  font-size: 16px;
-  margin-left: 50px;
-  margin-right: 50px;
+  font-size: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
   color: whitesmoke;
   font-weight: lighter;
   padding-top: 25px;
@@ -292,4 +292,15 @@ table td {
 }
 .home-text span {
   color: var(--color-secondary);
+}
+
+.footer {
+  padding-top: 35px;
+  font-size: 15px;
+}
+.footer span {
+  color: var(--color-secondary);
+}
+.footer a {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
