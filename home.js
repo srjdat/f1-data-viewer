@@ -1,14 +1,14 @@
-document.getElementById("home-text").innerHTML += "test"; 
+//document.getElementById("home-text").innerHTML += "test"; 
 
 //right now all this does is give me five results 
 //i have to get the information from one of them and output it to the user
 let url = "https://www.mediawiki.org/w/api.php";
 let params = "?action=query"
     + "&prop=extracts"
-    + "exlimit=1"
+    + "&exlimit=1"
     + "&exsentences=2"
     + "&titles=Formula_One"
-    + "explaintext=1"
+    + "&explaintext=1"
     + "&format=json"
     + "&formatversion=2"
     + "&origin=*";

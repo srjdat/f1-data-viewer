@@ -280,5 +280,16 @@ table td {
 }
 
 .home-text {
-  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: whitesmoke;
+  font-weight: lighter;
+  padding-top: 25px;
+}
+.home-text a {
+  text-decoration: none;
+}
+.home-text span {
+  color: var(--color-secondary);
 }/*# sourceMappingURL=styles.css.map */
