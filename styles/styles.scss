@@ -181,15 +181,15 @@ select {
   .standings {
     font-family: 'Tahoma';
     margin-top: 5px;
-    padding-bottom: 1rem;
+    padding-bottom: 20px;
     margin-left: auto;
     font-size: 25px;
     a {
-      text-decoration: none !important;
+      text-decoration: none;
     }
     .title {
       font-size: 45px;
-      text-decoration: underline;
+      //text-decoration: underline;
       font-weight: bolder;
       color: var(--color-secondary);
       padding-bottom: 10px;
@@ -199,6 +199,7 @@ select {
   .my-chart {
     align-self: right;
     margin-left: auto;
+    padding-bottom: 20px;
   }
 }
 
@@ -225,6 +226,8 @@ select {
 
 .upcoming-races {
   padding-top: 10px;
+  padding-bottom: 20px;
+
   .year-diff {
     padding: 10px;
     color: var(--color-secondary);
@@ -236,6 +239,7 @@ select {
   }
 }
 
+//for the button
 .fact-button{
   width: 170px;
   height: 75px;
@@ -318,6 +322,7 @@ select {
 .footer {
   padding-top: 35px;
   font-size: 15px;
+  padding-bottom: 15px;
 
   span{
     color: var(--color-secondary);

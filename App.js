@@ -118,7 +118,7 @@ function standings() {
             const barColors = ["#F3A505","#B8B799","#F80000","#8673A1","#7D8471","#E5BE01","#8A9597","#1E2460","#CB2821","#474A51","#922B3E","#343B29","#5D9B9B","#922B3E","#78C3FB","#16E0BD","#8F8F8F","#316650","#7FB5B5","#826C34","#474A51","#734222","#A18594","#E4A010","#47402E","#721422","#6C7059", "#3E5F8A", "#924E7D", "#015D52"];
 
             //create the graph section in html
-            document.getElementById("year-select").innerHTML += `<canvas class="my-chart" id="myChart" style="width:50%;max-width:50vw;height:50%;max-height:100vh;"></canvas>`;
+            document.getElementById("year-select").innerHTML += `<canvas class="my-chart" id="myChart" style="width:50%;max-width:50vw;height:50%;max-height:85vh;"></canvas>`;
 
             //enter the colors 
             //honestly i dont even know how this works i just know that this works
